@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* SinCleanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* SinCleanApp.swift */; };
+		A10000000000000000000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* RootView.swift */; };
+		A10000000000000000000003 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* AppTheme.swift */; };
+		A10000000000000000000004 /* SystemHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* SystemHealth.swift */; };
+		A10000000000000000000005 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* DashboardView.swift */; };
+		A10000000000000000000006 /* CleanupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* CleanupView.swift */; };
+		A10000000000000000000007 /* UninstallerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* UninstallerView.swift */; };
+		A10000000000000000000008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000008 /* Assets.xcassets */; };
+		A10000000000000000000009 /* CleanupModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000B /* CleanupModels.swift */; };
+		A1000000000000000000000A /* DiskScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000C /* DiskScanner.swift */; };
+		A1000000000000000000000B /* CleanupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000D /* CleanupViewModel.swift */; };
+		A1000000000000000000000C /* CleanupExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000E /* CleanupExecutor.swift */; };
+		A1000000000000000000000D /* CleanupHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000F /* CleanupHistoryStore.swift */; };
+		A1000000000000000000000E /* UninstallerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000010 /* UninstallerModels.swift */; };
+		A1000000000000000000000F /* ApplicationScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000011 /* ApplicationScanner.swift */; };
+		A10000000000000000000010 /* AppResidueScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000012 /* AppResidueScanner.swift */; };
+		A10000000000000000000011 /* UninstallExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000013 /* UninstallExecutor.swift */; };
+		A10000000000000000000012 /* UninstallHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000014 /* UninstallHistoryStore.swift */; };
+		A10000000000000000000013 /* UninstallerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000015 /* UninstallerViewModel.swift */; };
+		A10000000000000000000014 /* AppAssociationScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000016 /* AppAssociationScanner.swift */; };
+		A10000000000000000000015 /* UninstallManifestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000017 /* UninstallManifestBuilder.swift */; };
+		A10000000000000000000016 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000018 /* AppSettings.swift */; };
+		A10000000000000000000017 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000019 /* SettingsView.swift */; };
+		A10000000000000000000018 /* MenuBarPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001A /* MenuBarPanelView.swift */; };
+		A10000000000000000000030 /* ScanEvidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000030 /* ScanEvidence.swift */; };
+		A10000000000000000000031 /* ScanCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000031 /* ScanCoverage.swift */; };
+		A10000000000000000000032 /* CleanupCandidateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000032 /* CleanupCandidateDetail.swift */; };
+		A10000000000000000000033 /* SC13CandidateDetailPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000033 /* SC13CandidateDetailPreview.swift */; };
+		A10000000000000000000034 /* UninstallEvidenceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000034 /* UninstallEvidenceDetail.swift */; };
+		A10000000000000000000035 /* SC14UninstallEvidencePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000035 /* SC14UninstallEvidencePreview.swift */; };
+		A10000000000000000000036 /* IgnoreRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000036 /* IgnoreRules.swift */; };
+		A10000000000000000000037 /* IgnoreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000037 /* IgnoreListView.swift */; };
+		A10000000000000000000038 /* SC15IgnoreListPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000038 /* SC15IgnoreListPreview.swift */; };
+		A10000000000000000000039 /* OperationPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000039 /* OperationPlan.swift */; };
+		A10000000000000000000040 /* OperationPlanTextExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000040 /* OperationPlanTextExporter.swift */; };
+		A10000000000000000000041 /* OperationPlanExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000041 /* OperationPlanExportDocument.swift */; };
+		A10000000000000000000042 /* SC22PlanExportPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000042 /* SC22PlanExportPreview.swift */; };
+		A10000000000000000000043 /* ExecutionReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000043 /* ExecutionReceipt.swift */; };
+		A10000000000000000000044 /* ExecutionReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000044 /* ExecutionReceiptView.swift */; };
+		A10000000000000000000045 /* SC23ExecutionReceiptPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000045 /* SC23ExecutionReceiptPreview.swift */; };
+		A10000000000000000000046 /* ExecutionSafetyCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000046 /* ExecutionSafetyCore.swift */; };
+		A10000000000000000000047 /* OperationHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000047 /* OperationHistoryStore.swift */; };
+		A10000000000000000000048 /* OperationHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000048 /* OperationHistoryView.swift */; };
+		A10000000000000000000049 /* SC24OperationHistoryPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000049 /* SC24OperationHistoryPreview.swift */; };
+		A10000000000000000000050 /* SpaceAnalysisScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000050 /* SpaceAnalysisScope.swift */; };
+		A10000000000000000000051 /* SpaceAnalysisScopeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000051 /* SpaceAnalysisScopeViewModel.swift */; };
+		A10000000000000000000052 /* SpaceAnalysisScopeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000052 /* SpaceAnalysisScopeView.swift */; };
+		A10000000000000000000053 /* SC32SpaceAnalysisScopePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000053 /* SC32SpaceAnalysisScopePreview.swift */; };
+		A10000000000000000000054 /* SpaceAnalysisCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000054 /* SpaceAnalysisCatalog.swift */; };
+		A10000000000000000000055 /* SpaceAnalysisScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000055 /* SpaceAnalysisScanner.swift */; };
+		A10000000000000000000056 /* SpaceAnalysisResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000056 /* SpaceAnalysisResultsViewModel.swift */; };
+		A10000000000000000000057 /* SpaceAnalysisResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000057 /* SpaceAnalysisResultsView.swift */; };
+		A10000000000000000000058 /* SC33SpaceAnalysisPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000058 /* SC33SpaceAnalysisPreview.swift */; };
+		A10000000000000000000063 /* SC35SpaceAnalysisTrashPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000063 /* SC35SpaceAnalysisTrashPreview.swift */; };
+		A10000000000000000000064 /* SystemHealthSemantics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000064 /* SystemHealthSemantics.swift */; };
+		A10000000000000000000065 /* SystemHealthSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000065 /* SystemHealthSampler.swift */; };
+		A10000000000000000000066 /* SystemHealthTrendStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000066 /* SystemHealthTrendStore.swift */; };
+		A10000000000000000000067 /* SystemHealthReminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000067 /* SystemHealthReminders.swift */; };
+		A10000000000000000000099 /* SystemNotificationDelivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000099 /* SystemNotificationDelivery.swift */; };
+		A10000000000000000000068 /* SystemHealthDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000068 /* SystemHealthDashboardViewModel.swift */; };
+		A10000000000000000000069 /* SystemHealthEvidenceViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000069 /* SystemHealthEvidenceViews.swift */; };
+		A10000000000000000000070 /* SystemHealthReminderSettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000070 /* SystemHealthReminderSettingsSection.swift */; };
+		A10000000000000000000071 /* SC4SystemHealthPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000071 /* SC4SystemHealthPreview.swift */; };
+		A10000000000000000000072 /* OnboardingSemantics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000072 /* OnboardingSemantics.swift */; };
+		A10000000000000000000073 /* PermissionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000073 /* PermissionCenter.swift */; };
+		A10000000000000000000074 /* PrivacyDisclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000074 /* PrivacyDisclosure.swift */; };
+		A10000000000000000000075 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000075 /* OnboardingViewModel.swift */; };
+		A10000000000000000000076 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000076 /* OnboardingView.swift */; };
+		A10000000000000000000077 /* PermissionStatusStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000077 /* PermissionStatusStrip.swift */; };
+		A10000000000000000000078 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000078 /* PrivacyView.swift */; };
+		A10000000000000000000079 /* SC5OnboardingPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000079 /* SC5OnboardingPreview.swift */; };
+		A10000000000000000000059 /* SpaceAnalysisTrashPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000059 /* SpaceAnalysisTrashPlan.swift */; };
+		A10000000000000000000060 /* SpaceAnalysisTrashExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000060 /* SpaceAnalysisTrashExecutor.swift */; };
+		A10000000000000000000061 /* SpaceAnalysisTrashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000061 /* SpaceAnalysisTrashViewModel.swift */; };
+		A10000000000000000000062 /* SpaceAnalysisTrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000062 /* SpaceAnalysisTrashView.swift */; };
+		A10000000000000000000080 /* ReleaseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000080 /* ReleaseInfo.swift */; };
+		A10000000000000000000081 /* UpdateManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000081 /* UpdateManifest.swift */; };
+		A10000000000000000000082 /* UpdateVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000082 /* UpdateVerifier.swift */; };
+		A10000000000000000000083 /* UpdateRollbackLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000083 /* UpdateRollbackLog.swift */; };
+		A20000000000000000000001 /* UpdatePublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* UpdatePublicKey.swift */; };
+		A20000000000000000000002 /* UpdateDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* UpdateDownloader.swift */; };
+		A20000000000000000000003 /* UpdateInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* UpdateInstaller.swift */; };
+				A24000000000000000000001 /* UpdateRelaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24000000000000000000001 /* UpdateRelaunch.swift */; };
+		A20000000000000000000004 /* UpdatePackageGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000004 /* UpdatePackageGuard.swift */; };
+		A10000000000000000000084 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000084 /* AboutView.swift */; };
+		A10000000000000000000087 /* SpaceAnalysisDiagnosis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000087 /* SpaceAnalysisDiagnosis.swift */; };
+		A10000000000000000000088 /* SpaceAnalysisDiagnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000088 /* SpaceAnalysisDiagnosisView.swift */; };
+		A10000000000000000000089 /* SCPD1SpaceAnalysisDiagnosisPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000089 /* SCPD1SpaceAnalysisDiagnosisPreview.swift */; };
+		A10000000000000000000090 /* SpaceChangeSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000090 /* SpaceChangeSnapshotStore.swift */; };
+		A10000000000000000000091 /* SpaceChangeComparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000091 /* SpaceChangeComparison.swift */; };
+		A10000000000000000000092 /* SpaceAnalysisChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000092 /* SpaceAnalysisChangeView.swift */; };
+		A10000000000000000000093 /* SCPD2SpaceChangePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000093 /* SCPD2SpaceChangePreview.swift */; };
+		A10000000000000000000094 /* AppFootprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000094 /* AppFootprint.swift */; };
+		A10000000000000000000095 /* UninstallRecheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000095 /* UninstallRecheck.swift */; };
+		A10000000000000000000096 /* AppFootprintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000096 /* AppFootprintView.swift */; };
+		A10000000000000000000097 /* SCPD3AppFootprintPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000097 /* SCPD3AppFootprintPreview.swift */; };
+		A10000000000000000000085 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000085 /* LICENSE.txt */; };
+		A10000000000000000000086 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000086 /* CHANGELOG.txt */; };
+		A10000000000000000000098 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000098 /* Localizable.xcstrings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10000000000000000000001 /* SinCleanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinCleanApp.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* SystemHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemHealth.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* CleanupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupView.swift; sourceTree = "<group>"; };
+		B10000000000000000000007 /* UninstallerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallerView.swift; sourceTree = "<group>"; };
+		B10000000000000000000008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10000000000000000000009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1000000000000000000000A /* SinClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1000000000000000000000B /* CleanupModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupModels.swift; sourceTree = "<group>"; };
+		B1000000000000000000000C /* DiskScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskScanner.swift; sourceTree = "<group>"; };
+		B1000000000000000000000D /* CleanupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupViewModel.swift; sourceTree = "<group>"; };
+		B1000000000000000000000E /* CleanupExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupExecutor.swift; sourceTree = "<group>"; };
+		B1000000000000000000000F /* CleanupHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupHistoryStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000010 /* UninstallerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallerModels.swift; sourceTree = "<group>"; };
+		B10000000000000000000011 /* ApplicationScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationScanner.swift; sourceTree = "<group>"; };
+		B10000000000000000000012 /* AppResidueScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResidueScanner.swift; sourceTree = "<group>"; };
+		B10000000000000000000013 /* UninstallExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallExecutor.swift; sourceTree = "<group>"; };
+		B10000000000000000000014 /* UninstallHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallHistoryStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000015 /* UninstallerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallerViewModel.swift; sourceTree = "<group>"; };
+		B10000000000000000000016 /* AppAssociationScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssociationScanner.swift; sourceTree = "<group>"; };
+		B10000000000000000000017 /* UninstallManifestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallManifestBuilder.swift; sourceTree = "<group>"; };
+		B10000000000000000000018 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		B10000000000000000000019 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B1000000000000000000001A /* MenuBarPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPanelView.swift; sourceTree = "<group>"; };
+		B10000000000000000000030 /* ScanEvidence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanEvidence.swift; sourceTree = "<group>"; };
+		B10000000000000000000031 /* ScanCoverage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCoverage.swift; sourceTree = "<group>"; };
+		B10000000000000000000032 /* CleanupCandidateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupCandidateDetail.swift; sourceTree = "<group>"; };
+		B10000000000000000000033 /* SC13CandidateDetailPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC13CandidateDetailPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000034 /* UninstallEvidenceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallEvidenceDetail.swift; sourceTree = "<group>"; };
+		B10000000000000000000035 /* SC14UninstallEvidencePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC14UninstallEvidencePreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000036 /* IgnoreRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreRules.swift; sourceTree = "<group>"; };
+		B10000000000000000000037 /* IgnoreListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreListView.swift; sourceTree = "<group>"; };
+		B10000000000000000000038 /* SC15IgnoreListPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC15IgnoreListPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000039 /* OperationPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationPlan.swift; sourceTree = "<group>"; };
+		B10000000000000000000040 /* OperationPlanTextExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationPlanTextExporter.swift; sourceTree = "<group>"; };
+		B10000000000000000000041 /* OperationPlanExportDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationPlanExportDocument.swift; sourceTree = "<group>"; };
+		B10000000000000000000042 /* SC22PlanExportPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC22PlanExportPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000043 /* ExecutionReceipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionReceipt.swift; sourceTree = "<group>"; };
+		B10000000000000000000044 /* ExecutionReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionReceiptView.swift; sourceTree = "<group>"; };
+		B10000000000000000000045 /* SC23ExecutionReceiptPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC23ExecutionReceiptPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000046 /* ExecutionSafetyCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionSafetyCore.swift; sourceTree = "<group>"; };
+		B10000000000000000000047 /* OperationHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationHistoryStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000048 /* OperationHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationHistoryView.swift; sourceTree = "<group>"; };
+		B10000000000000000000049 /* SC24OperationHistoryPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC24OperationHistoryPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000050 /* SpaceAnalysisScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisScope.swift; sourceTree = "<group>"; };
+		B10000000000000000000051 /* SpaceAnalysisScopeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisScopeViewModel.swift; sourceTree = "<group>"; };
+		B10000000000000000000052 /* SpaceAnalysisScopeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisScopeView.swift; sourceTree = "<group>"; };
+		B10000000000000000000053 /* SC32SpaceAnalysisScopePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC32SpaceAnalysisScopePreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000054 /* SpaceAnalysisCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisCatalog.swift; sourceTree = "<group>"; };
+		B10000000000000000000055 /* SpaceAnalysisScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisScanner.swift; sourceTree = "<group>"; };
+		B10000000000000000000056 /* SpaceAnalysisResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisResultsViewModel.swift; sourceTree = "<group>"; };
+		B10000000000000000000057 /* SpaceAnalysisResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisResultsView.swift; sourceTree = "<group>"; };
+		B10000000000000000000058 /* SC33SpaceAnalysisPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC33SpaceAnalysisPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000063 /* SC35SpaceAnalysisTrashPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC35SpaceAnalysisTrashPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000064 /* SystemHealthSemantics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemHealthSemantics.swift; sourceTree = "<group>"; };
+		B10000000000000000000065 /* SystemHealthSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemHealthSampler.swift; sourceTree = "<group>"; };
+		B10000000000000000000066 /* SystemHealthTrendStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemHealthTrendStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000067 /* SystemHealthReminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemHealthReminders.swift; sourceTree = "<group>"; };
+		B10000000000000000000068 /* SystemHealthDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemHealthDashboardViewModel.swift; sourceTree = "<group>"; };
+		B10000000000000000000069 /* SystemHealthEvidenceViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemHealthEvidenceViews.swift; sourceTree = "<group>"; };
+		B10000000000000000000070 /* SystemHealthReminderSettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemHealthReminderSettingsSection.swift; sourceTree = "<group>"; };
+		B10000000000000000000071 /* SC4SystemHealthPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC4SystemHealthPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000072 /* OnboardingSemantics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSemantics.swift; sourceTree = "<group>"; };
+		B10000000000000000000073 /* PermissionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionCenter.swift; sourceTree = "<group>"; };
+		B10000000000000000000099 /* SystemNotificationDelivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotificationDelivery.swift; sourceTree = "<group>"; };
+		B10000000000000000000074 /* PrivacyDisclosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyDisclosure.swift; sourceTree = "<group>"; };
+		B10000000000000000000075 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		B10000000000000000000076 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B10000000000000000000077 /* PermissionStatusStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionStatusStrip.swift; sourceTree = "<group>"; };
+		B10000000000000000000078 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		B10000000000000000000079 /* SC5OnboardingPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC5OnboardingPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000059 /* SpaceAnalysisTrashPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisTrashPlan.swift; sourceTree = "<group>"; };
+		B10000000000000000000060 /* SpaceAnalysisTrashExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisTrashExecutor.swift; sourceTree = "<group>"; };
+		B10000000000000000000061 /* SpaceAnalysisTrashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisTrashViewModel.swift; sourceTree = "<group>"; };
+		B10000000000000000000062 /* SpaceAnalysisTrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisTrashView.swift; sourceTree = "<group>"; };
+		B10000000000000000000080 /* ReleaseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseInfo.swift; sourceTree = "<group>"; };
+		B10000000000000000000081 /* UpdateManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateManifest.swift; sourceTree = "<group>"; };
+		B10000000000000000000082 /* UpdateVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateVerifier.swift; sourceTree = "<group>"; };
+		B10000000000000000000083 /* UpdateRollbackLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRollbackLog.swift; sourceTree = "<group>"; };
+		B20000000000000000000001 /* UpdatePublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePublicKey.swift; sourceTree = "<group>"; };
+		B20000000000000000000002 /* UpdateDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDownloader.swift; sourceTree = "<group>"; };
+		B20000000000000000000003 /* UpdateInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInstaller.swift; sourceTree = "<group>"; };
+				B24000000000000000000001 /* UpdateRelaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRelaunch.swift; sourceTree = "<group>"; };
+		B20000000000000000000004 /* UpdatePackageGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePackageGuard.swift; sourceTree = "<group>"; };
+		B10000000000000000000084 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B10000000000000000000087 /* SpaceAnalysisDiagnosis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisDiagnosis.swift; sourceTree = "<group>"; };
+		B10000000000000000000088 /* SpaceAnalysisDiagnosisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisDiagnosisView.swift; sourceTree = "<group>"; };
+		B10000000000000000000089 /* SCPD1SpaceAnalysisDiagnosisPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPD1SpaceAnalysisDiagnosisPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000090 /* SpaceChangeSnapshotStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceChangeSnapshotStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000091 /* SpaceChangeComparison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceChangeComparison.swift; sourceTree = "<group>"; };
+		B10000000000000000000092 /* SpaceAnalysisChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAnalysisChangeView.swift; sourceTree = "<group>"; };
+		B10000000000000000000093 /* SCPD2SpaceChangePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPD2SpaceChangePreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000094 /* AppFootprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFootprint.swift; sourceTree = "<group>"; };
+		B10000000000000000000095 /* UninstallRecheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallRecheck.swift; sourceTree = "<group>"; };
+		B10000000000000000000096 /* AppFootprintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFootprintView.swift; sourceTree = "<group>"; };
+		B10000000000000000000097 /* SCPD3AppFootprintPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPD3AppFootprintPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000085 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		B10000000000000000000086 /* CHANGELOG.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
+		B10000000000000000000098 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				D10000000000000000000002 /* SinClean */,
+				D1000000000000000000000A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D10000000000000000000002 /* SinClean */ = {
+			isa = PBXGroup;
+			children = (
+				D10000000000000000000003 /* App */,
+				D10000000000000000000004 /* Core */,
+				D10000000000000000000005 /* Features */,
+				D10000000000000000000009 /* Resources */,
+			);
+			path = SinClean;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000001 /* SinCleanApp.swift */,
+				B10000000000000000000041 /* OperationPlanExportDocument.swift */,
+				B10000000000000000000042 /* SC22PlanExportPreview.swift */,
+				B10000000000000000000045 /* SC23ExecutionReceiptPreview.swift */,
+				B10000000000000000000049 /* SC24OperationHistoryPreview.swift */,
+				B10000000000000000000053 /* SC32SpaceAnalysisScopePreview.swift */,
+				B10000000000000000000058 /* SC33SpaceAnalysisPreview.swift */,
+				B10000000000000000000063 /* SC35SpaceAnalysisTrashPreview.swift */,
+				B10000000000000000000089 /* SCPD1SpaceAnalysisDiagnosisPreview.swift */,
+				B10000000000000000000093 /* SCPD2SpaceChangePreview.swift */,
+				B10000000000000000000097 /* SCPD3AppFootprintPreview.swift */,
+				B10000000000000000000071 /* SC4SystemHealthPreview.swift */,
+				B10000000000000000000079 /* SC5OnboardingPreview.swift */,
+				B10000000000000000000002 /* RootView.swift */,
+				B1000000000000000000001A /* MenuBarPanelView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000004 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000003 /* AppTheme.swift */,
+				B10000000000000000000004 /* SystemHealth.swift */,
+				B10000000000000000000030 /* ScanEvidence.swift */,
+				B10000000000000000000031 /* ScanCoverage.swift */,
+				B10000000000000000000039 /* OperationPlan.swift */,
+				B10000000000000000000040 /* OperationPlanTextExporter.swift */,
+				B10000000000000000000043 /* ExecutionReceipt.swift */,
+				B10000000000000000000046 /* ExecutionSafetyCore.swift */,
+				B10000000000000000000047 /* OperationHistoryStore.swift */,
+				B10000000000000000000044 /* ExecutionReceiptView.swift */,
+				B1000000000000000000000B /* CleanupModels.swift */,
+				B1000000000000000000000C /* DiskScanner.swift */,
+				B1000000000000000000000E /* CleanupExecutor.swift */,
+				B1000000000000000000000F /* CleanupHistoryStore.swift */,
+				B10000000000000000000010 /* UninstallerModels.swift */,
+				B10000000000000000000011 /* ApplicationScanner.swift */,
+				B10000000000000000000012 /* AppResidueScanner.swift */,
+				B10000000000000000000013 /* UninstallExecutor.swift */,
+				B10000000000000000000014 /* UninstallHistoryStore.swift */,
+				B10000000000000000000016 /* AppAssociationScanner.swift */,
+				B10000000000000000000017 /* UninstallManifestBuilder.swift */,
+				B10000000000000000000094 /* AppFootprint.swift */,
+				B10000000000000000000095 /* UninstallRecheck.swift */,
+				B10000000000000000000018 /* AppSettings.swift */,
+				B10000000000000000000036 /* IgnoreRules.swift */,
+				B10000000000000000000050 /* SpaceAnalysisScope.swift */,
+				B10000000000000000000054 /* SpaceAnalysisCatalog.swift */,
+				B10000000000000000000059 /* SpaceAnalysisTrashPlan.swift */,
+				B10000000000000000000064 /* SystemHealthSemantics.swift */,
+				B10000000000000000000065 /* SystemHealthSampler.swift */,
+				B10000000000000000000066 /* SystemHealthTrendStore.swift */,
+				B10000000000000000000067 /* SystemHealthReminders.swift */,
+				B10000000000000000000072 /* OnboardingSemantics.swift */,
+				B10000000000000000000073 /* PermissionCenter.swift */,
+				B10000000000000000000099 /* SystemNotificationDelivery.swift */,
+				B10000000000000000000074 /* PrivacyDisclosure.swift */,
+				B10000000000000000000080 /* ReleaseInfo.swift */,
+				B10000000000000000000081 /* UpdateManifest.swift */,
+				B10000000000000000000082 /* UpdateVerifier.swift */,
+				B10000000000000000000083 /* UpdateRollbackLog.swift */,
+				B20000000000000000000001 /* UpdatePublicKey.swift */,
+				B20000000000000000000002 /* UpdateDownloader.swift */,
+				B20000000000000000000003 /* UpdateInstaller.swift */,
+				B24000000000000000000001 /* UpdateRelaunch.swift */,
+				B20000000000000000000004 /* UpdatePackageGuard.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000005 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D10000000000000000000006 /* Dashboard */,
+				D1000000000000000000000E /* Onboarding */,
+				D10000000000000000000007 /* Cleanup */,
+				D10000000000000000000008 /* Uninstaller */,
+				D1000000000000000000000B /* Settings */,
+				D1000000000000000000000C /* SpaceAnalysis */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000075 /* OnboardingViewModel.swift */,
+				B10000000000000000000076 /* OnboardingView.swift */,
+				B10000000000000000000077 /* PermissionStatusStrip.swift */,
+				B10000000000000000000078 /* PrivacyView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000006 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000005 /* DashboardView.swift */,
+				B10000000000000000000068 /* SystemHealthDashboardViewModel.swift */,
+				B10000000000000000000069 /* SystemHealthEvidenceViews.swift */,
+				B10000000000000000000070 /* SystemHealthReminderSettingsSection.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000007 /* Cleanup */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000006 /* CleanupView.swift */,
+				B1000000000000000000000D /* CleanupViewModel.swift */,
+				B10000000000000000000032 /* CleanupCandidateDetail.swift */,
+				B10000000000000000000033 /* SC13CandidateDetailPreview.swift */,
+			);
+			path = Cleanup;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000008 /* Uninstaller */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000007 /* UninstallerView.swift */,
+				B10000000000000000000015 /* UninstallerViewModel.swift */,
+				B10000000000000000000096 /* AppFootprintView.swift */,
+				B10000000000000000000034 /* UninstallEvidenceDetail.swift */,
+				B10000000000000000000035 /* SC14UninstallEvidencePreview.swift */,
+			);
+			path = Uninstaller;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000019 /* SettingsView.swift */,
+				B10000000000000000000037 /* IgnoreListView.swift */,
+				B10000000000000000000038 /* SC15IgnoreListPreview.swift */,
+				B10000000000000000000048 /* OperationHistoryView.swift */,
+				B10000000000000000000084 /* AboutView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000C /* SpaceAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000051 /* SpaceAnalysisScopeViewModel.swift */,
+				B10000000000000000000052 /* SpaceAnalysisScopeView.swift */,
+				B10000000000000000000055 /* SpaceAnalysisScanner.swift */,
+				B10000000000000000000056 /* SpaceAnalysisResultsViewModel.swift */,
+				B10000000000000000000057 /* SpaceAnalysisResultsView.swift */,
+				B10000000000000000000087 /* SpaceAnalysisDiagnosis.swift */,
+				B10000000000000000000088 /* SpaceAnalysisDiagnosisView.swift */,
+				B10000000000000000000090 /* SpaceChangeSnapshotStore.swift */,
+				B10000000000000000000091 /* SpaceChangeComparison.swift */,
+				B10000000000000000000092 /* SpaceAnalysisChangeView.swift */,
+				B10000000000000000000060 /* SpaceAnalysisTrashExecutor.swift */,
+				B10000000000000000000061 /* SpaceAnalysisTrashViewModel.swift */,
+				B10000000000000000000062 /* SpaceAnalysisTrashView.swift */,
+			);
+			path = SpaceAnalysis;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000008 /* Assets.xcassets */,
+				B10000000000000000000009 /* Info.plist */,
+				B10000000000000000000085 /* LICENSE.txt */,
+				B10000000000000000000086 /* CHANGELOG.txt */,
+				B10000000000000000000098 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000A /* SinClean.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10000000000000000000001 /* SinClean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F10000000000000000000002 /* Build configuration list for PBXNativeTarget "SinClean" */;
+			buildPhases = (
+				C10000000000000000000002 /* Sources */,
+				C10000000000000000000001 /* Frameworks */,
+				C10000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SinClean;
+			productName = SinClean;
+			productReference = B1000000000000000000000A /* SinClean.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E10000000000000000000002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					E10000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = F10000000000000000000001 /* Build configuration list for PBXProject "SinClean" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = zh_Hans;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				zh_Hans,
+				"zh-Hant",
+			);
+			mainGroup = D10000000000000000000001;
+			productRefGroup = D1000000000000000000000A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E10000000000000000000001 /* SinClean */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C10000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000008 /* Assets.xcassets in Resources */,
+				A10000000000000000000085 /* LICENSE.txt in Resources */,
+				A10000000000000000000086 /* CHANGELOG.txt in Resources */,
+				A10000000000000000000098 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C10000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* SinCleanApp.swift in Sources */,
+				A10000000000000000000002 /* RootView.swift in Sources */,
+				A10000000000000000000003 /* AppTheme.swift in Sources */,
+				A10000000000000000000004 /* SystemHealth.swift in Sources */,
+				A10000000000000000000005 /* DashboardView.swift in Sources */,
+				A10000000000000000000006 /* CleanupView.swift in Sources */,
+				A10000000000000000000007 /* UninstallerView.swift in Sources */,
+				A10000000000000000000030 /* ScanEvidence.swift in Sources */,
+				A10000000000000000000031 /* ScanCoverage.swift in Sources */,
+				A10000000000000000000032 /* CleanupCandidateDetail.swift in Sources */,
+				A10000000000000000000033 /* SC13CandidateDetailPreview.swift in Sources */,
+				A10000000000000000000034 /* UninstallEvidenceDetail.swift in Sources */,
+				A10000000000000000000035 /* SC14UninstallEvidencePreview.swift in Sources */,
+				A10000000000000000000036 /* IgnoreRules.swift in Sources */,
+				A10000000000000000000037 /* IgnoreListView.swift in Sources */,
+				A10000000000000000000038 /* SC15IgnoreListPreview.swift in Sources */,
+				A10000000000000000000039 /* OperationPlan.swift in Sources */,
+				A10000000000000000000040 /* OperationPlanTextExporter.swift in Sources */,
+				A10000000000000000000043 /* ExecutionReceipt.swift in Sources */,
+				A10000000000000000000046 /* ExecutionSafetyCore.swift in Sources */,
+				A10000000000000000000047 /* OperationHistoryStore.swift in Sources */,
+				A10000000000000000000048 /* OperationHistoryView.swift in Sources */,
+				A10000000000000000000049 /* SC24OperationHistoryPreview.swift in Sources */,
+				A10000000000000000000050 /* SpaceAnalysisScope.swift in Sources */,
+				A10000000000000000000051 /* SpaceAnalysisScopeViewModel.swift in Sources */,
+				A10000000000000000000052 /* SpaceAnalysisScopeView.swift in Sources */,
+				A10000000000000000000053 /* SC32SpaceAnalysisScopePreview.swift in Sources */,
+				A10000000000000000000054 /* SpaceAnalysisCatalog.swift in Sources */,
+				A10000000000000000000087 /* SpaceAnalysisDiagnosis.swift in Sources */,
+				A10000000000000000000055 /* SpaceAnalysisScanner.swift in Sources */,
+				A10000000000000000000056 /* SpaceAnalysisResultsViewModel.swift in Sources */,
+				A10000000000000000000057 /* SpaceAnalysisResultsView.swift in Sources */,
+				A10000000000000000000088 /* SpaceAnalysisDiagnosisView.swift in Sources */,
+				A10000000000000000000058 /* SC33SpaceAnalysisPreview.swift in Sources */,
+				A10000000000000000000063 /* SC35SpaceAnalysisTrashPreview.swift in Sources */,
+				A10000000000000000000089 /* SCPD1SpaceAnalysisDiagnosisPreview.swift in Sources */,
+				A10000000000000000000090 /* SpaceChangeSnapshotStore.swift in Sources */,
+				A10000000000000000000091 /* SpaceChangeComparison.swift in Sources */,
+				A10000000000000000000092 /* SpaceAnalysisChangeView.swift in Sources */,
+				A10000000000000000000093 /* SCPD2SpaceChangePreview.swift in Sources */,
+				A10000000000000000000094 /* AppFootprint.swift in Sources */,
+				A10000000000000000000095 /* UninstallRecheck.swift in Sources */,
+				A10000000000000000000096 /* AppFootprintView.swift in Sources */,
+				A10000000000000000000097 /* SCPD3AppFootprintPreview.swift in Sources */,
+				A10000000000000000000064 /* SystemHealthSemantics.swift in Sources */,
+				A10000000000000000000065 /* SystemHealthSampler.swift in Sources */,
+				A10000000000000000000066 /* SystemHealthTrendStore.swift in Sources */,
+				A10000000000000000000067 /* SystemHealthReminders.swift in Sources */,
+				A10000000000000000000068 /* SystemHealthDashboardViewModel.swift in Sources */,
+				A10000000000000000000069 /* SystemHealthEvidenceViews.swift in Sources */,
+				A10000000000000000000070 /* SystemHealthReminderSettingsSection.swift in Sources */,
+				A10000000000000000000071 /* SC4SystemHealthPreview.swift in Sources */,
+				A10000000000000000000072 /* OnboardingSemantics.swift in Sources */,
+				A10000000000000000000073 /* PermissionCenter.swift in Sources */,
+				A10000000000000000000099 /* SystemNotificationDelivery.swift in Sources */,
+				A10000000000000000000074 /* PrivacyDisclosure.swift in Sources */,
+				A10000000000000000000075 /* OnboardingViewModel.swift in Sources */,
+				A10000000000000000000076 /* OnboardingView.swift in Sources */,
+				A10000000000000000000077 /* PermissionStatusStrip.swift in Sources */,
+				A10000000000000000000078 /* PrivacyView.swift in Sources */,
+				A10000000000000000000079 /* SC5OnboardingPreview.swift in Sources */,
+				A10000000000000000000059 /* SpaceAnalysisTrashPlan.swift in Sources */,
+				A10000000000000000000060 /* SpaceAnalysisTrashExecutor.swift in Sources */,
+				A10000000000000000000061 /* SpaceAnalysisTrashViewModel.swift in Sources */,
+				A10000000000000000000062 /* SpaceAnalysisTrashView.swift in Sources */,
+				A10000000000000000000044 /* ExecutionReceiptView.swift in Sources */,
+				A10000000000000000000041 /* OperationPlanExportDocument.swift in Sources */,
+				A10000000000000000000042 /* SC22PlanExportPreview.swift in Sources */,
+				A10000000000000000000045 /* SC23ExecutionReceiptPreview.swift in Sources */,
+				A10000000000000000000009 /* CleanupModels.swift in Sources */,
+				A1000000000000000000000A /* DiskScanner.swift in Sources */,
+				A1000000000000000000000B /* CleanupViewModel.swift in Sources */,
+				A1000000000000000000000C /* CleanupExecutor.swift in Sources */,
+				A1000000000000000000000D /* CleanupHistoryStore.swift in Sources */,
+				A1000000000000000000000E /* UninstallerModels.swift in Sources */,
+				A1000000000000000000000F /* ApplicationScanner.swift in Sources */,
+				A10000000000000000000010 /* AppResidueScanner.swift in Sources */,
+				A10000000000000000000011 /* UninstallExecutor.swift in Sources */,
+				A10000000000000000000012 /* UninstallHistoryStore.swift in Sources */,
+				A10000000000000000000013 /* UninstallerViewModel.swift in Sources */,
+				A10000000000000000000014 /* AppAssociationScanner.swift in Sources */,
+				A10000000000000000000015 /* UninstallManifestBuilder.swift in Sources */,
+				A10000000000000000000016 /* AppSettings.swift in Sources */,
+				A10000000000000000000017 /* SettingsView.swift in Sources */,
+				A10000000000000000000018 /* MenuBarPanelView.swift in Sources */,
+				A10000000000000000000080 /* ReleaseInfo.swift in Sources */,
+				A10000000000000000000081 /* UpdateManifest.swift in Sources */,
+				A10000000000000000000082 /* UpdateVerifier.swift in Sources */,
+				A10000000000000000000083 /* UpdateRollbackLog.swift in Sources */,
+				A20000000000000000000001 /* UpdatePublicKey.swift in Sources */,
+				A20000000000000000000002 /* UpdateDownloader.swift in Sources */,
+				A20000000000000000000003 /* UpdateInstaller.swift in Sources */,
+				A24000000000000000000001 /* UpdateRelaunch.swift in Sources */,
+				A20000000000000000000004 /* UpdatePackageGuard.swift in Sources */,
+				A10000000000000000000084 /* AboutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F10000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F10000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F10000000000000000000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 18;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SinClean/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinclean.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				SINCLEAN_PRERELEASE_CHANNEL = beta.2;
+				SINCLEAN_UPDATE_CHANNEL = internal;
+				SINCLEAN_UPDATE_MANIFEST_URL = "https://blacstar7.github.io/sinclean-updates/internal/manifest.json";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		F10000000000000000000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 18;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SinClean/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinclean.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				SINCLEAN_PRERELEASE_CHANNEL = beta.2;
+				SINCLEAN_UPDATE_CHANNEL = internal;
+				SINCLEAN_UPDATE_MANIFEST_URL = "https://blacstar7.github.io/sinclean-updates/internal/manifest.json";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F10000000000000000000001 /* Build configuration list for PBXProject "SinClean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000000011 /* Debug */,
+				F10000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F10000000000000000000002 /* Build configuration list for PBXNativeTarget "SinClean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000000021 /* Debug */,
+				F10000000000000000000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E10000000000000000000002 /* Project object */;
+}
