@@ -4,6 +4,16 @@ A native macOS disk-cleanup utility that respects your privacy: everything runs 
 
 [中文说明](README.zh-CN.md)
 
+## Screenshots
+
+| Space Analysis — left task card & right results | Mac Status dashboard | Cleanable Items |
+| --- | --- | --- |
+| ![Space Analysis](screenshots/space-analysis.png) | ![Mac Status](screenshots/mac-status.png) | ![Cleanable Items](screenshots/cleanable-items.png) |
+
+| Deep Uninstall | Settings | Menu Bar Panel |
+| --- | --- | --- |
+| ![Deep Uninstall](screenshots/deep-uninstall.png) | ![Settings](screenshots/settings.png) | ![Menu Bar Panel](screenshots/menubar-panel.png) |
+
 ## Features
 
 - **Mac Status** — at-a-glance system health dashboard
